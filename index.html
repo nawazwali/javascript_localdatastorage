@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- Start Form -->
+    <section id="donation">
+        <h2 class="text-center">Support our project</h2>
+        <p class="text-center"> Your donation will support our work to advance our fire fighting in Rainforests </p>
+        <form action="post" id="myForm">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Your Full Name">
+            <span id="fullnameSpan" class="fullnameSpan"></span>
+            <br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email">
+            <span id="emailSpan" class="emailSpan"></span>
+            <br>
+
+            <label for="amount">Donation Amount</label>
+            <input type="number" id="amount" name="amount" placeholder="Donation Amount">
+            <span id="amountSpan" class="amountSpan"></span>
+            <br>
+
+            <label for="credit">Credit card number</label>
+            <input type="number" id="credit" name="credit" placeholder="Credit card number">
+            <span id="creditSpan" class="creditSpan"></span>
+            <br>
+
+            <select id="formYear" required>Year</select>
+
+            <select id="formMonth" required>
+                <option value="JAN">January</option>
+                <option value="FEB">February</option>
+                <option value="MAR">March</option>
+                <option value="APR">April</option>
+                <option value="MAY">May</option>
+                <option value="JUN">June</option>
+                <option value="JUL">July</option>
+                <option value="AUG">August</option>
+                <option value="SEP">September</option>
+                <option value="OCT">October</option>
+                <option value="NOV">November</option>
+                <option value="DEC">December</option>
+            </select>
+            <br>
+
+            <input type="submit" class="btnDonation" id="btnDonation" name="button">
+
+        </form>
+        <div id="thankyou"></div>
+        <h2 class="table-h2">HTML Table</h2>
+        <div class="bbtns">
+        <button onclick="sortTableByName()" class="sort1">Sort by Name</button>
+        <button onclick="sortTableByAmount()" class="sort2">Sort by Amount</button>
+        </div>
+        <table id="table">
+            <tr>
+                <th>Full Name</th>
+                <th>Amount</th>
+                <th>Email</th>
+                <th>Credit number</th>
+                <th>Year</th>
+                <th>Month</th>
+            </tr>
+            
+        </table>
+    </section>
+    <!-- END Form -->
+
+  <script src="./main.js"></script>
+</body>
+</html>
